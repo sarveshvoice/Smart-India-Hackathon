@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.mygov.parivartan.smartindiahackathon.R;
 import com.mygov.parivartan.smartindiahackathon.employee.model.JobItem;
 
 import java.util.List;

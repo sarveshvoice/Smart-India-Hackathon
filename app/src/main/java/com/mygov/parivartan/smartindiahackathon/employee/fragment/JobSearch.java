@@ -24,6 +24,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.mygov.parivartan.smartindiahackathon.R;
 import com.mygov.parivartan.smartindiahackathon.employee.adapter.JobAdapter;
 import com.mygov.parivartan.smartindiahackathon.employee.model.JobItem;
+import com.mygov.parivartan.smartindiahackathon.employer.model.Employer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -152,5 +153,3 @@ public class JobSearch extends Fragment {
     }
 }
 
-
-}
