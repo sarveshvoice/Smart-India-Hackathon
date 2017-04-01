@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "51266019327",
+    "firebase_url": "https://smartindiahackathon-f0a83.firebaseio.com",
+    "project_id": "smartindiahackathon-f0a83",
+    "storage_bucket": "smartindiahackathon-f0a83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51266019327:android:4c8c532bf62d079a",
+        "android_client_info": {
+          "package_name": "com.mygov.parivartan.smartindiahackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51266019327-johnc2gi1l4iq1d6169ufq6gihpn5kri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mygov.parivartan.smartindiahackathon",
+            "certificate_hash": "1de4e28ed542f5250d8edecc486a6ba573aa141f"
+          }
+        },
+        {
+          "client_id": "51266019327-l115nmbo2trcob3sg8pl2nbl086h16bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMjtTkv-yv6f_3CW8tWdc2-STBZE-pXSE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51266019327-l115nmbo2trcob3sg8pl2nbl086h16bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
