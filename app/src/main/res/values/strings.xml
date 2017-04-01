@@ -41,6 +41,13 @@
     <string name="skill2">Skill_2</string>
     <string name="skill3">Skill_3</string>
 
+    <string name="emp_search_result">People</string>
+    <string name="employer_profile">My Profile</string>
+    <string name="employer_name">Organization Name</string>
+    <string name="employer_intro">Organization Intro Here..</string>
+    <string name="contact_us">Contact Us. </string>
+    <string name="intro">Intro about organization</string>
+
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="other">Other</string>
@@ -52,4 +59,13 @@
     <string name="search">Search</string>
     <string name="search_jobs">Search jobs by Skill</string>
     <string name="Profile">Profile</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="help">Assist</string>
+    <string name="emp_profile">Employee</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="employee_intro">Your Skills here</string>
+    <string name="employee_location">City</string>
+    <string name="default_name">Your Name</string>
 </resources>
