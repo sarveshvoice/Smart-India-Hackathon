@@ -2,4 +2,6 @@
     <string name="app_name">Smart India Hackathon</string>
 
     <string name="employee_signup">Employee Registration Portal </string>
+    <string name="employee">Employee</string>
+    <string name="employer">Employer</string>
 </resources>
