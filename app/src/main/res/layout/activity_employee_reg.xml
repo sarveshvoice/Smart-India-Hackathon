@@ -2,6 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_margin="20dp"
     android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emp_title"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/et_reg_aadhaar"
+        android:hint="Enter Your Aadhaar"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:id="@+id/et_reg_email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Enter Password"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_reg_pass"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_reg"
+        android:text="CREATE ACCOUNT"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already Registered? Login Here."
+        android:textAlignment="center"
+        android:id="@+id/bt_login"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>
