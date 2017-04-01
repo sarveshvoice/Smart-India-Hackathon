@@ -6,6 +6,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.mygov.parivartan.smartindiahackathon.R;
+import com.mygov.parivartan.smartindiahackathon.employee.fragment.EmployeeSettting;
+import com.mygov.parivartan.smartindiahackathon.employee.fragment.JobSearch;
 import com.mygov.parivartan.smartindiahackathon.employee.fragment.JobSuggestion;
 
 /**
@@ -35,7 +37,7 @@ public class ViewPageAdapter extends FragmentPagerAdapter {
             return new JobSuggestion();
         }
         else if(position ==2 ){
-            return new EmployeeSetting();
+            return new EmployeeSettting();
         }
         return new JobSearch();
     }

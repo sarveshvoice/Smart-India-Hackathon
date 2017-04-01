@@ -47,6 +47,7 @@ public class EmployeeRegistration extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_reg);
+
         sharedpreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
         mAuth = FirebaseAuth.getInstance();
@@ -83,6 +84,7 @@ public class EmployeeRegistration extends AppCompatActivity{
         });
     }
     private void registerUser(){
+
         final String email = mEmail.getText().toString();
         String password = mPassword.getText().toString();
         final String aadhaar = mAadhaar.getText().toString();
