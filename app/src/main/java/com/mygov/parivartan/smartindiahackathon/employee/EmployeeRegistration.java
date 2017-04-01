@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -40,21 +41,21 @@ public class EmployeeRegistration extends AppCompatActivity{
     private EditText mName;
     private ProgressDialog progressDialog;
     private DatabaseReference mDatabase;
-    SharedPreferences sharedPreferences;
+    SharedPreferences sharedpreferences;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_reg);
+        sharedpreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
-        //Firebase Instances
         mAuth = FirebaseAuth.getInstance();
 
-        mEmail = (EditText)findViewById(R.id.et_reg_email);
-        mPassword = (EditText)findViewById(R.id.et_reg_pass);
+        mEmail = (EditText) findViewById(R.id.et_reg_email);
+        mPassword = (EditText) findViewById(R.id.et_reg_password);
+        mRegister = (Button) findViewById(R.id.bt_register);
+        mLogin = (TextView) findViewById(R.id.goto_login);
         mAadhaar = (EditText)findViewById(R.id.et_reg_aadhaar);
-        mRegister = (Button)findViewById(R.id.bt_reg);
-        mLogin = (TextView)findViewById(R.id.bt_login);
 
         mDatabase = FirebaseDatabase.getInstance().getReference("Employee");
         TextView textView = (TextView)findViewById(R.id.emp_title);
@@ -81,34 +82,34 @@ public class EmployeeRegistration extends AppCompatActivity{
             }
         });
     }
-
     private void registerUser(){
         final String email = mEmail.getText().toString();
         String password = mPassword.getText().toString();
         final String aadhaar = mAadhaar.getText().toString();
 
-        //Added shared Prefreneces
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        SharedPreferences.Editor editor = sharedpreferences.edit();
         editor.putString("email",email);
         editor.putString("password",password);
         editor.putString("uid",aadhaar);
         editor.apply();
 
-        //Log the inputs and
+        final String userid = email.split("@")[0];
+
         Log.e("email","");
         Log.e("password","");
+        Log.e("Username ", userid);
 
         if(TextUtils.isEmpty(email)){
-            mEmail.setError("Enter Correct Email");
+            mEmail.setError("Enter Email");
             return;
         }
         if(aadhaar.length() != 12){
-            mAadhaar.setError("Enter a valid Aadhaar Number");
+            mAadhaar.setError("Enter a valid Aadhaar Id");
             return;
         }
 
         if(TextUtils.isEmpty(password)){
-            mPassword.setError("Enter a Valid 8 digit Password");
+            mPassword.setError("Enter Password");
             return;
         }
         progressDialog.setMessage("Registering Please Wait");
@@ -119,8 +120,7 @@ public class EmployeeRegistration extends AppCompatActivity{
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            //TODO add here the Employee Object to push to Database
-                            Toast.makeText(EmployeeRegistration.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EmployeeRegistration.this, "Data Uploaded", Toast.LENGTH_SHORT).show();
                             finish();
                         }else{
                             Toast.makeText(EmployeeRegistration.this, "Registration Error", Toast.LENGTH_SHORT).show();

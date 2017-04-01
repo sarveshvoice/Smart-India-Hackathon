@@ -4,4 +4,9 @@
     <string name="employee_signup">Employee Registration Portal </string>
     <string name="employee">Employee</string>
     <string name="employer">Employer</string>
+    <string name="aadhaar">Aadhaar No.</string>
+    <string name="password">Password</string>
+    <string name="Email">Email</string>
+    <string name="register">Register</string>
+    <string name="already_reg">Already Registered? Login </string>
 </resources>
