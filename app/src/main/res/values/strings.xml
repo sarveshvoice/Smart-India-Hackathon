@@ -68,4 +68,7 @@
     <string name="employee_intro">Your Skills here</string>
     <string name="employee_location">City</string>
     <string name="default_name">Your Name</string>
+    
+    <string name="employer_Email">Employer Login</string>
+    <string name="password">Enter Password</string>
 </resources>
