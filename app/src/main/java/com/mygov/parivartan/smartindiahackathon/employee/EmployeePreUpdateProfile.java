@@ -46,9 +46,8 @@ public class EmployeePreUpdateProfile extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.acitivity_employee_pre_update);
+        
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
         //FireBase Instance
