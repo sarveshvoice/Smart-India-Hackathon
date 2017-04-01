@@ -46,4 +46,9 @@
     <string name="other">Other</string>
 
     <string name="jobs">Jobs</string>
+
+    <string name="sort_city">Sort By City</string>
+    <string name="search">Search</string>
+    <string name="search_jobs">Search jobs by Skill</string>
+    <string name="Profile">Profile</string>
 </resources>
