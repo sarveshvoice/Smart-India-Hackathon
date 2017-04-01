@@ -120,7 +120,11 @@ public class EmployeeRegistration extends AppCompatActivity{
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
+                            Employee employee = new Employee(email,"","","","",
+                                    "","","","","","");
+                            mDatabase.child(aadhaar).setValue(employee);
                             Toast.makeText(EmployeeRegistration.this, "Data Uploaded", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(),EmployeePreUpdateProfile.class));
                             finish();
                         }else{
                             Toast.makeText(EmployeeRegistration.this, "Registration Error", Toast.LENGTH_SHORT).show();

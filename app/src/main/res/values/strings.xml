@@ -9,4 +9,6 @@
     <string name="Email">Email</string>
     <string name="register">Register</string>
     <string name="already_reg">Already Registered? Login </string>
+    <string name="employee_login">Employee Login Portal</string>
+    <string name="login">Login</string>
 </resources>

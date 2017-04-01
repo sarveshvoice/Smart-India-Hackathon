@@ -20,6 +20,9 @@
         </activity>
 
         <activity android:name=".employee.EmployeeRegistration"/>
+        <activity android:name=".employee.EmployeeProfile"/>
+        <activity android:name=".employee.EmployeeLogin"/>
+        <activity android:name=".employee.EmployeePreUpdateProfile"/>
 
     </application>
 
